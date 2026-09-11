@@ -39,7 +39,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">BestSwipe (the &ldquo;App&rdquo;)　Effective date: July 2, 2026</p>
+  <p class="meta">BestSwipe (the &ldquo;App&rdquo;)　Effective date: September 11, 2026</p>
   <p class="lang">Languages: <a href="privacy-ja.html">日本語</a> ・ <a href="privacy-ko.html">한국어</a> ・ English</p>
 
   <p>This policy explains how the provider of the App (&ldquo;we,&rdquo; &ldquo;us&rdquo;) handles your information when you use the App. The App is built around a single principle: your photos are organized and deleted entirely on your own device.</p>
@@ -64,9 +64,10 @@
   </ul>
 
   <h2>4. Information we may collect</h2>
-  <p><strong>Account:</strong> No account is required to use the App. We do not ask for your name, email address, or phone number.</p>
-  <p><strong>Anonymous usage data (if introduced in the future):</strong> We may collect anonymous usage data to improve the App. If we do, it is limited to your language setting (locale), country or region (country), and in-app events such as screen views and interactions. It never includes your photos or any information derived from your photos. We do not use this data to identify you, and we do not use it to track you.<span class="note">As of the effective date of this policy, we do not collect the usage data described above. If we begin collecting it, we will update this policy and reflect it accurately in the App Store privacy details (App Privacy).</span></p>
-  <p><strong>Purchase information:</strong> Paid features (subscriptions and a one-time purchase) are billed through the Apple App Store. Apple processes payment; we do not collect or store your card number or other payment details. We may check the status of a purchase, renewal, or refund (the plan type, expiry, and whether it renewed) through a purchase-management service, but this is not linked to your name or your photos.</p>
+  <p><strong>Account:</strong> No account is required. The App does not request your name, email address, or phone number.</p>
+  <p><strong>Usage analytics:</strong> We send PostHog a randomly generated installation ID; app launches, screen views, interactions and permission states; language and device-region settings; App Store storefront; app and technical versions; product and transaction IDs, price and currency; and aggregate processing times, cleanup counts and size ranges. We never send photos, videos, photo IDs, file names, album names, EXIF or face information. Although the analytics ID contains no name, it links usage and purchase records for the same installation. IP-based geolocation enrichment is disabled for PostHog captures.</p>
+  <p><strong>Purchases:</strong> Apple processes payments. RevenueCat manages purchase, renewal, refund, expiration, product and transaction records. We do not receive card numbers. We associate RevenueCat purchase events with the PostHog installation ID for analytics.</p>
+  <p><strong>Advertising measurement:</strong> Only after you allow App Tracking Transparency (ATT) do we initialize the Meta SDK and share advertising identifiers (IDFA), device and SDK identifiers, IP address, app activity and purchase data with Meta to measure and optimize ads for this App. Purchase events are sent through RevenueCat. The SDK may process diagnostic data. Before permission or when permission is denied, we do not start sending identifiable Meta events; Apple's SKAdNetwork provides aggregate attribution without identifying individual users. Denying ATT does not restrict photo cleanup or purchases.</p>
 
   <h2>5. Why the App accesses your photo library</h2>
   <p>The App accesses your photo library only so that you can organize, delete, and sort your own photos into albums. Access is based on your permission, and you choose its scope &mdash; full access, or only the photos you select (Limited Access). If you grant access to selected photos only, the App works normally within that scope.</p>
@@ -75,22 +76,24 @@
   <p>Photos are never deleted instantly. The deletion candidates you choose by swiping always appear on a review screen first, where you can confirm them. Actual deletion only happens after the standard iOS deletion confirmation. Deleted photos remain in the iOS &ldquo;Recently Deleted&rdquo; album for about 30 days, and you can restore them yourself within that window. We do not collect the contents of deleted photos.</p>
 
   <h2>7. Sharing and third-party services</h2>
-  <p>We do not sell or share your information with third parties, except as required by law. If we introduce the anonymous usage data described in Section 4, we may use an external analytics service to aggregate and analyze it; even then, we do not pass your photos or any information derived from them to that service. We use Apple and a purchase-management service to provide paid features.</p>
+  <p>We use Apple for payment, RevenueCat for purchase management, PostHog for usage analytics and Meta for advertising measurement with ATT permission. These providers receive the data described in Section 4 for those purposes. We do not share photos, videos, photo IDs, EXIF or face information with them. We may also disclose information when required by law.</p>
+  <p>Provider policies: <a href="https://www.apple.com/legal/privacy/">Apple</a>, <a href="https://www.revenuecat.com/privacy/">RevenueCat</a>, <a href="https://posthog.com/privacy">PostHog</a>, <a href="https://www.facebook.com/privacy/policy/">Meta</a>.</p>
 
   <h2>8. Data storage and retention</h2>
-  <p>Your settings and organizing history are, as a rule, stored on your device. When you delete (uninstall) the App, this on-device data is removed with it.</p>
+  <p>Cleanup history and settings are stored on your device. Analytics and purchase records are retained by the relevant services for as long as needed for service delivery, analysis, support, refunds and legal obligations, then deleted or aggregated according to retention settings and applicable law. Uninstalling the App does not delete analytics or purchase information already sent to these services.</p>
 
   <h2>9. Children&rsquo;s privacy</h2>
   <p>The App is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided information through the App, please contact us at the address above.</p>
 
-  <h2>10. Your rights</h2>
-  <p>Because the App creates no account and we hold no information that identifies you, there is generally no personal data on our side for us to delete or disclose. You can erase the on-device data by deleting the App. If you have questions, contact us at the address above.</p>
+  <h2 id="data-deletion">10. Your rights and data deletion</h2>
+  <p>To request deletion, email <a href="mailto:rebirth.sakuraya@gmail.com?subject=BestSwipe%20data%20deletion">rebirth.sakuraya@gmail.com</a> with the subject “BestSwipe data deletion”. If you made a purchase, include information that helps locate the records, such as the purchase date, product name and Apple transaction information. Do not send passwords, card numbers, photos or videos. We may ask for more information to identify the relevant records. After verification, we will explain the outcome of deletion or restriction, subject to legal retention obligations. Deleting the App does not cancel a subscription. Manage cancellation in iOS Settings under your Apple Account → Subscriptions.</p>
+  <p>You can change advertising-tracking permission in iOS Settings → Privacy &amp; Security → Tracking. Once the App reads your changed permission, it stops new identifiable advertising events. Contact us to request access, correction, deletion or restriction of previously sent data. We may ask for transaction information to locate the relevant records. We respond according to applicable law, subject to obligations to retain certain information.</p>
 
   <h2>11. Security</h2>
   <p>By keeping photo processing on your device, the App structurally reduces the risk of your photo information leaking off the device. That said, no method of processing on the internet or on a device can be guaranteed to be completely secure.</p>
 
   <h2>12. International transfers</h2>
-  <p>Because the App does not send photo information off your device, no international transfer of your photos occurs. If we later collect the anonymous usage data in Section 4 and use an analytics service located outside your country, we will update this policy to say so.</p>
+  <p>Your photos and videos are not transferred abroad. Usage, purchase and advertising data described in Section 4 may be processed by Apple, RevenueCat, PostHog and Meta in the United States and other countries. Our PostHog project is hosted in the US region. Provider safeguards and agreements apply to these transfers.</p>
 
   <h2>13. Changes to this policy</h2>
   <p>We may revise this policy as laws change or as we add features to the App. For material changes, we will notify you within the App or through the App Store listing. Revisions take effect when posted on this page.</p>
@@ -99,16 +102,9 @@
   <p>For questions about this policy, contact <a href="mailto:rebirth.sakuraya@gmail.com">rebirth.sakuraya@gmail.com</a>.</p>
 
   <footer>
-    Effective date: July 2, 2026<br>
-    This page is not legal advice. Before publishing, have it reviewed by a qualified attorney and confirmed against current law and the latest App Store review guidelines.
+    Effective date: September 11, 2026
   </footer>
 </main>
-<!--
-  DRAFT — this is a pre-legal-review draft.
-  Provider name: 桜谷俊輝, romanized as "Sakuraya Toshiki" (confirmed 2026-07-22).
-  Address/phone disclosure is handled on tokushoho-ja.html per Japanese law.
-  Before it takes effect, it must be reviewed by a qualified attorney and checked
-  against current privacy law and the latest App Store review guidelines.
--->
+
 </body>
 </html>
